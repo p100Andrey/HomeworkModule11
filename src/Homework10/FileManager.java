@@ -28,7 +28,7 @@ public class FileManager {
             BufferedReader in = new BufferedReader(new FileReader(file.getAbsoluteFile()));
             String s;
             while ((s = in.readLine()) != null) {
-                sb.append(s).append("\n");
+                sb.append(s);
             }
         } catch (IOException e) {
             e.printStackTrace();
